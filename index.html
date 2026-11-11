@@ -239,8 +239,9 @@ document.querySelectorAll('button[data-act]').forEach(b=>b.addEventListener('cli
   if(a==='sendneg'){
     const d=document.getElementById('d').value.trim()||'a day to be decided',
           t=document.getElementById('t').value.trim()||'a time to be decided',
-          p=document.getElementById('p').value.trim()||'a place to be decided';
-    reply('Counter offer: '+d+', '+t+', at '+p+'. Deal?');
+          p=document.getElementById('p').value.trim()||'a place to be decided',
+          e=document.getElementById('e').value.trim()||'nothing yet';
+    reply('Counter offer: '+d+', '+t+', at '+p+'. To earn it: '+e+'. Deal?');
   }
 }));
 </script>
